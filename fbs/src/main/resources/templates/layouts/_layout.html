@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" th:href="@{/images/favicon.png}">
+    <title>Easy Deal Flight Booking System</title>
+    <!-- Custom CSS -->
+    <link th:href="@{/css/style.min.css}" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script th:src="@{/js/html5shiv.js}"></script>
+    <script th:src="@{/js/respond.min.js}"></script>
+    <![endif]-->
+</head>
+
+<body class="horizontal-nav skin-megna fixed-layout">
+    <span th:replace="fragments/preloader :: preloader"></span>
+    <div id="main-wrapper">
+        <span th:replace="fragments/header :: header"></span>
+        <span th:replace="fragments/sidebar :: sidebar"></span>
+        <div class="page-wrapper">
+            <div class="container-fluid" layout:fragment="content">
+            </div>
+        </div>
+        <span th:replace="fragments/footer :: footer"></span>
+    </div>
+    <script th:src="@{/js/jquery/jquery-3.2.1.min.js}"></script>
+    <script th:src="@{/js/popper/popper.min.js}"></script>
+    <script th:src="@{/js/bootstrap/js/bootstrap.min.js}"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script th:src="@{/js/perfect-scrollbar.jquery.min.js}"></script>
+    <!--Wave Effects -->
+    <script th:src="@{/js/waves.js}"></script>
+    <!--Menu sidebar -->
+    <script th:src="@{/js/sidebarmenu.js}"></script>
+    <!--stickey kit -->
+    <script th:src="@{/js/sticky-kit-master/sticky-kit.min.js}"></script>
+    <script th:src="@{/js/sparkline/jquery.sparkline.min.js}"></script>
+    <!--Custom JavaScript -->
+    <script th:src="@{/js/custom.min.js}"></script>
+</body>
+</html>
