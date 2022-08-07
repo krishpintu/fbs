@@ -15,9 +15,10 @@ public class CustomUserDetail extends User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
+
         return super.getRoles().stream().map(
                 role -> new SimpleGrantedAuthority(role.getName())
-            ).collect(Collectors.toList());
+            ).collect(Collectors.toSet());
     }
 
     @Override
@@ -47,6 +48,6 @@ public class CustomUserDetail extends User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return super.isEnabled();
     }
 }

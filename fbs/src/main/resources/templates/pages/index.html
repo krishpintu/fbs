@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{layouts/_layout}">
+      layout:decorate="~{layouts/_layout}" xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <meta charset="UTF-8">
@@ -24,6 +24,8 @@
       </ol>
       <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New</button>
     </div>
+    <span th:text="${#authentication.getPrincipal().getUsername()}"></span>
+    <span th:text="${#authentication.getPrincipal().authorities}"></span>
   </div>
 </div>
 <!-- End Bread crumb and right sidebar toggle -->

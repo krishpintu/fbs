@@ -22,29 +22,13 @@
                         </ul>
                     </li>
                     <li class="nav-small-cap">--- PERSONAL</li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu">Dashboard <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
+                    <li> <a class="has-arrow waves-effect waves-dark" href="index.html" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu">Dashboard <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a></li>
+                    <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i><span class="hide-menu">Master Data</span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="index.html">Minimal </a></li>
-                            <li><a href="index2.html">Analytical</a></li>
-                            <li><a href="index3.html">Demographical</a></li>
-                            <li><a href="index4.html">Modern</a></li>
-                        </ul>
-                    </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i><span class="hide-menu">Apps</span></a>
-                        <ul aria-expanded="false" class="collapse">
-                            <li><a href="app-calendar.html">Calendar</a></li>
-                            <li><a href="app-chat.html">Chat app</a></li>
-                            <li><a href="app-ticket.html">Support Ticket</a></li>
-                            <li><a href="app-contact.html">Contact / Employee</a></li>
-                            <li><a href="app-contact2.html">Contact Grid</a></li>
-                            <li><a href="app-contact-detail.html">Contact Detail</a></li>
-                            <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><span class="hide-menu">Inbox</span></a>
-                                <ul aria-expanded="false" class="collapse">
-                                    <li><a href="app-email.html">Mailbox</a></li>
-                                    <li><a href="app-email-detail.html">Mailbox Detail</a></li>
-                                    <li><a href="app-compose.html">Compose Mail</a></li>
-                                </ul>
-                            </li>
+                            <li><a th:href="@{/sector}">Sector</a></li>
+                            <li><a th:href="@{/flight}">Flight</a></li>
+                            <li><a th:href="@{/user}">User</a></li>
+                            <li><a th:href="@{/role}">Role</a></li>
                         </ul>
                     </li>
                     <li> <a class="has-arrow waves-effect waves-dark two-column" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Ui <span class="badge badge-pill badge-primary text-white ml-auto">25</span></span></a>
@@ -159,52 +143,14 @@
                             </li>
                         </ul>
                     </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-pie-chart"></i><span class="hide-menu">Extra</span></a>
+                    <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-pie-chart"></i><span class="hide-menu">Reports</span></a>
                         <ul aria-expanded="false" class="collapse">
-                            <li><a href="chart-morris.html">Morris Chart</a></li>
-                            <li><a href="chart-chartist.html">Chartis Chart</a></li>
-                            <li><a href="chart-echart.html">Echarts</a></li>
-                            <li><a href="chart-flot.html">Flot Chart</a></li>
-                            <li><a href="chart-knob.html">Knob Chart</a></li>
-                            <li><a href="chart-chart-js.html">Chartjs</a></li>
-                            <li><a href="chart-sparkline.html">Sparkline Chart</a></li>
-                            <li><a href="chart-extra-chart.html">Extra chart</a></li>
-                            <li><a href="chart-peity.html">Peity Charts</a></li>
-                            <li>
-                                <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><span class="hide-menu">Icons</span></a>
-                                <ul aria-expanded="false" class="collapse">
-                                    <li><a href="icon-material.html">Material Icons</a></li>
-                                    <li><a href="icon-fontawesome.html">Fontawesome Icons</a></li>
-                                    <li><a href="icon-themify.html">Themify Icons</a></li>
-                                    <li><a href="icon-weather.html">Weather Icons</a></li>
-                                    <li><a href="icon-simple-lineicon.html">Simple Line icons</a></li>
-                                    <li><a href="icon-flag.html">Flag Icons</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><span class="hide-menu">Maps</span></a>
-                                <ul aria-expanded="false" class="collapse">
-                                    <li><a href="map-google.html">Google Maps</a></li>
-                                    <li><a href="map-vector.html">Vector Maps</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="chart-morris.html">Sales Record</a></li>
+                            <li><a href="chart-chartist.html">Refunds</a></li>
+                            <li><a href="chart-echart.html">Account Ledger</a></li>
                         </ul>
                     </li>
-                    <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-align-left"></i><span class="hide-menu">Multi</span></a>
-                        <ul aria-expanded="false" class="collapse">
-                            <li><a href="javascript:void(0)">item 1.1</a></li>
-                            <li><a href="javascript:void(0)">item 1.2</a></li>
-                            <li> <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Menu 1.3</a>
-                                <ul aria-expanded="false" class="collapse">
-                                    <li><a href="javascript:void(0)">item 1.3.1</a></li>
-                                    <li><a href="javascript:void(0)">item 1.3.2</a></li>
-                                    <li><a href="javascript:void(0)">item 1.3.3</a></li>
-                                    <li><a href="javascript:void(0)">item 1.3.4</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="javascript:void(0)">item 1.4</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </nav>
             <!-- End Sidebar navigation -->
